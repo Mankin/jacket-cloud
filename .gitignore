@@ -3,12 +3,18 @@
 /app/Config/database.php
 /app/tmp
 /lib/Cake/Console/Templates/skel/tmp/
+/lib/Cake/Utility/
 /plugins
 /vendors
 /build
 /dist
 /tags
 *.mo
+empty
+*.swp
+
+/app/webroot/img/works/*
+
 
 # IDE and editor specific files #
 #################################
