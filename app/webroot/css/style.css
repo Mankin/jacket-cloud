@@ -5,3 +5,17 @@
 body.works-container {
     background: center center / cover no-repeat fixed;
 }
+
+#users-profile .thumbnail a > img, #users-profile .thumbnail > img {
+    max-width: 100px;
+}
+
+#users-info { padding: 0; }
+
+#users-info li { margin-bottom: 10px; }
+
+#users-info a { display: block; }
+
+#users-info .btn { width: 100%; }
+
+#users-info .btn a { color: white; }

@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-            <a class="navbar-brand" href="http://localhost/disc-jacky/stream">Brand</a>
+            <a class="navbar-brand" href="http://localhost/jacket-cloud/streams">Jacket Cloud</a>
             </div><!-- .navbar-header -->
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -35,7 +35,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User Name <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="http://localhost/disc-jacky/users/index/Taishi">Profile</a></li>
+                            <li><a href="http://localhost/jacket-cloud/users">Profile</a></li>
                             <li><a href="http://localhost/disc-jacky/users/index/Taishi/likes">Likes</a></li>
                             <li><a href="#">Following</a></li>
                         </ul>
