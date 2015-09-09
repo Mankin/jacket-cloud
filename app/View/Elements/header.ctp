@@ -3,6 +3,7 @@
     <?php echo $this->Html->charset(); ?>
     <?php echo $this->Html->css('bootstrap'); ?>
     <?php echo $this->Html->css('bootflat'); ?>
+    <?php echo $this->Html->css('touchTouch'); ?>
     <?php echo $this->Html->css('style'); ?>
     </head>
     <body>

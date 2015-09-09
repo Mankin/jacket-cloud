@@ -6,10 +6,10 @@ echo $this->element('header', array());
 ?>
 
     <div class="container wrapper">
-        <div class="row">
+        <div class="row thumbs">
         <?php for($i = 0;$i < 12;$i++): ?>
             <div class="col-xs-6 col-md-3">
-                <a href="./Works" class="thumbnail">
+                <a href="../artworks-000127415740-3mpi40-t500x500.jpg" class="thumbnail">
                     <img src="../artworks-000127415740-3mpi40-t500x500.jpg" alt="...">
                 </a>
             </div>
@@ -20,5 +20,5 @@ echo $this->element('header', array());
 /*
 * Load Footer
 */
-echo $this->element('footer', array(), array('cache' => true));
+echo $this->element('footer');
 ?>
