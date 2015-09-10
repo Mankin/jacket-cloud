@@ -38,7 +38,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <?php echo $this->Html->link('Upload', array(
-                            'controller' => 'upload',
+                            'controller' => 'uploads',
                             'action'     => 'index'
                         )); ?>
                     </li>
