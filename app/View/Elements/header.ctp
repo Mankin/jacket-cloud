@@ -30,10 +30,10 @@
                     <li class="active"><a href="http://localhost/disc-jacky/stream">Stream <span class="sr-only">(current)</span></a></li>
                 </ul>
                 <form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="form-search search-only">
+                        <i class="search-icon glyphicon glyphicon-search"></i>
+                        <input type="text" class="form-control search-query">
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
                 </form>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
