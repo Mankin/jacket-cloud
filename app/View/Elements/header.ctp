@@ -48,6 +48,18 @@
                             <li><a href="http://localhost/jacket-cloud/users">Profile</a></li>
                             <li><a href="http://localhost/disc-jacky/users/index/Taishi/likes">Likes</a></li>
                             <li><a href="#">Following</a></li>
+                            <li>
+                                <?php echo $this->Html->link('Login', array(
+                                    'controller' => 'users',
+                                    'action'     => 'facebook'
+                                )); ?>
+                            </li>
+                            <li>
+                                <?php echo $this->Html->link('Logout', array(
+                                    'controller' => 'users',
+                                    'action'     => 'logout'
+                                )); ?>
+                            </li>
                         </ul>
                     </li>
                 </ul>

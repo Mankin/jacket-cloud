@@ -1,5 +1,4 @@
 <?php
-
 class StreamsController extends AppController
 {
     public $uses = array('Work');
