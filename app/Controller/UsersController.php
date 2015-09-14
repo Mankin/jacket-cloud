@@ -5,9 +5,8 @@ App::import('vendor', 'facebook/php-sdk/src/facebook');
 class UsersController extends AppController
 {
     public $uses = array();
-
     public $name = 'Users';
-
+    public $autoLayout = true;
     public $layout = 'users';
     public $facebook;
 

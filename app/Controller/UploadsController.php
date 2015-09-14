@@ -2,8 +2,9 @@
 
 class UploadsController extends AppController
 {
+    public $name = 'Uploads';
     public $uses = array();
-
+    public $autoLayout = true;
     public $layout = null;
 
     const UPLOAD_FILE_PASS = IMAGES . 'works/';

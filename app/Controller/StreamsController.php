@@ -1,7 +1,9 @@
 <?php
 class StreamsController extends AppController
 {
+    public $name = 'Streams';
     public $uses = array('Work');
+    public $autoLayout = true;
 
     public $layout = 'usual';
 
