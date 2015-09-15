@@ -2,6 +2,8 @@
 
 class Work extends AppModel
 {
+    public $name = 'Work';
+
     public $validate = array(
         'workFile' => array(
             'upload-file' => array(

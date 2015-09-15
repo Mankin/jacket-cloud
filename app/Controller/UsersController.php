@@ -28,11 +28,20 @@ class UsersController extends AppController
         if($user){//認証後の処理
             $me = $this->facebook->api('/me');//ユーザ情報取得
             $this->Session->write('mydata',$me);//fbデータをセッションに保存
-            $this->User->save(array(
-                'User' => array(
-                    'name' => $me['name']
-                )
+            $hasRegistered = $this->User->find('count', array(
+                'conditions' => array('User.id_facebook' => $me['id'])
             ));
+            if ($hasRegistered === 0) {
+                /*
+                * DBに登録していない場合
+                */
+                $this->User->save(array(
+                    'User' => array(
+                        'name' => $me['name'],
+                        'id_facebook'   => $me['id']
+                    )
+                ));
+            }
             $this->redirect(array(
                 'controller' => 'streams',
                 'action'     => 'index'
