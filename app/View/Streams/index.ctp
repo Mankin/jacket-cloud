@@ -1,3 +1,4 @@
+<?php echo $this->Session->flash(); ?>
 <div class="row thumbs">
 <?php foreach ($worksList as $work): ?>
     <div class="col-xs-6 col-md-3">

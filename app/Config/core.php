@@ -216,8 +216,17 @@
  *
  */
 	Configure::write('Session', array(
-		'defaults' => 'php'
+		'defaults' => 'php',
+        'timeout' => 1440, // 単位：分
+        'cookie' => 'jacket-cloud',
+        'ini' => array(
+            'session.cookie_path' => '/',
+            'session.cookie_lifetime' => 0,
+            'session.cookie_lifetime' => 'localhost',
+        )
 	));
+
+    Configure::write('Session.checkAgent', true);
 
 /**
  * A random string used in security hashing methods.

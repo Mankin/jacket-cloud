@@ -117,3 +117,6 @@ CakeLog::config('error', array(
 /*
 ******************** オリジナル設定
 */
+
+// これを書かないとセッションがページ間で共有できない
+if(!isset($_SESSION)) session_start();

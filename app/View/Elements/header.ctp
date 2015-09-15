@@ -51,7 +51,7 @@
                             <li>
                                 <?php echo $this->Html->link('Login', array(
                                     'controller' => 'users',
-                                    'action'     => 'facebook'
+                                    'action'     => 'login'
                                 )); ?>
                             </li>
                             <li>

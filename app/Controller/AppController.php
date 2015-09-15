@@ -30,5 +30,26 @@ App::uses('Controller', 'Controller');
  * @package		app.Controller
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
-class AppController extends Controller {
+class AppController extends Controller
+{
+    public $uses = array('User');
+    public $components = array(
+        'Session',
+        'Auth' => array(
+            'loginRedirect' => array('controller' => 'users', 'action' => 'index'),
+            'logoutRedirect' => array('controller' => 'streams', 'action' => 'index'),
+            'authenticate'  => array('Basic')
+        ),
+        'Cookie'
+    );
+
+    public function beforeFilter()
+    {
+        $this->Auth->allow('index');
+        if ($this->Auth->loggedIn()) {
+            $this->Session->setFlash(__('ログインしています。'));
+        } else {
+            $this->Session->setFlash(__('ログインしていません。'));
+        }
+    }
 }
